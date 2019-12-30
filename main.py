@@ -2,7 +2,7 @@ import sys
 
 # This is a very simple DNA to protein translator using the universal genetic code.
 
-# Definition of the codons
+# Definition of the codons in a dictionary
 geneticCodeLong = {
     'gct': 'Ala',
     'gcc': 'Ala',
