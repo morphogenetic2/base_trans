@@ -110,8 +110,13 @@ if len(dna) % 3 != 0:
     print('This is not a correct ORF, you have %d mismatched bases' % (len(dna) % 3))
     sys.exit(0)
 
-triplets = [dna[i:i + 3] for i in
-            range(0, len(dna), 3)]  # Iterate through dna to make a list with all of the triplets, isolated
+#triplets = [dna[i:i + 3] for i in
+ #           range(0, len(dna), 3)]  # Iterate through dna to make a list with all of the triplets, isolated
+
+triplets=[]
+for i in range(0,len(dna),3):
+    triplets+=dna[i:i+3]
+ 
 # print(triplets)
 proteinLong = ''  # Long string for the translated protein
 dnaLong = ''  # Formatted final DNA sequence
